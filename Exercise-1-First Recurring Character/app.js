@@ -13,3 +13,4 @@ function firstRecurring(arr) {
 var arr = ['D','C','B','A','C','D'];
 
 firstRecurring(arr);
+
