@@ -64,7 +64,8 @@ function median(arr1,  arr2) {
      if (arr1.getSize() == 1)  return ((arr1.getFirst() + arr2.getFirst()) / 2);
      if (arr1.getSize() == 2) {
           
-          return ((Math.max(arr1.getFirst(), arr2.getFirst()) + Math.min(arr1.getLast(), arr2.getLast())) / 2);               
+          return ((Math.max(arr1.getFirst(), arr2.getFirst()) + 
+                   Math.min(arr1.getLast(), arr2.getLast())) / 2);               
      }
 
      if (median1 == median2) return median1;
@@ -80,16 +81,15 @@ function median(arr1,  arr2) {
      return median(arr1.subarray(Math.floor((arr1.getSize() - 1) / 2), arr1.getSize()), arr2.subarray(0, Math.floor((arr2.getSize() / 2) + 1)));
 }
 
+var medArrays = 0;
+var arr1 = [1, 2, 3, 4, 5, 6]; // median = 2.5
+var arr2 = [0, 0, 0, 0, 10, 10];
 
-/*var arr1 = [1, 2, 3, 4, 5, 6]; // median = 2.5
-var arr2 = [0, 0, 0, 0, 10, 10];*/
-
-var arr1 = [1, 3, 5];  // median = 3.5
-var arr2 = [2, 4, 6];
+/*var arr1 = [1, 3, 5];  // median = 3.5
+var arr2 = [2, 4, 6]; */
 
 /* var arr1 = [1, 3, 6, 6];  // median = 5
 var arr2 = [2, 4, 6, 9];*/
-var medArrays = 0;
 
 /*var arr1 = [1, 3, 6, 6];
 var arr2 = [2, 4, 6, 9];*/
