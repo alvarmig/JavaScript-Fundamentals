@@ -39,6 +39,6 @@ function countFreq(arr) {
  var arr = [1,3,1,4,5,6,3,3,3,6,6]; // 3
  countFreq(arr);
 
- var arr = [1, 3, 1, 4, 5, 6, 3, 3] // 2
+ var arr = [1,3,1,4,5,6,3,3] // 2
  countFreq(arr);
  
