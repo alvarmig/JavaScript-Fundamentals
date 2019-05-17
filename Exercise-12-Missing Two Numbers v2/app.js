@@ -50,6 +50,9 @@ function twoMissing(arr) {
 var arr = [1,3,4,5];
 console.log(twoMissing(arr));
 
+var arr = [2,5,1,4];
+console.log(twoMissing(arr));
+
 var arr = [1,2,5,6];
 console.log(twoMissing(arr));
 
