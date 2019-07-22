@@ -1,5 +1,5 @@
 //student pass with 60 
-var grade = 51;
+
 
 if (grade >= 60) {
     console.log('Student passed the class');
@@ -12,3 +12,4 @@ if (grade >= 60) {
     }
 } 
 
+var grade = 51;
