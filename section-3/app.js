@@ -133,4 +133,20 @@ function test8(){
 
   console.log(arrNum);
 }
-test8();
+//test8();
+
+var var1=true;
+var var2=false;
+var res;
+
+res = var1 && var2;
+console.log(res);
+
+function test(number)
+{
+   while(number < 5) {
+      number++;
+   }
+   return number;
+}
+console.log(test(2));
