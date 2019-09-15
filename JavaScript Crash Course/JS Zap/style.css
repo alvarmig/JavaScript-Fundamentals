@@ -1,0 +1,46 @@
+body {
+  font-family: 'Anton', sans-serif;
+}
+.zap-header {
+  padding-top: 20px;
+  margin-bottom: 30px;
+}
+.zap-main {
+  margin-top: 20px;
+}
+.zap-main div {
+  border: 1px solid #000;
+}
+
+div.zap-main2 {
+  border: 1px solid #000;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.section-container {
+  margin-bottom: 30px;
+}
+.topics {
+  height: 52px;
+}
+
+#topic1 {
+  background-color: rgb(240, 14, 14);
+}
+
+#topic2 {
+  background-color: aqua;
+}
+
+#topic3 {
+  background-color: rgb(199, 20, 235);
+}
+
+#topic4 {
+  background-color: rgb(30, 255, 0);
+}
+
+#topic5 {
+  background-color: rgb(247, 243, 20);
+}

@@ -1,7 +1,7 @@
 //https://www.youtube.com/watch?v=0ik6X4DJKCc
 // EXAMINE THE DOCUMENT OBJECT
 
-/* console.dir(document);
+console.dir(document);
 console.log(document.domain);
 console.log(document.URL);
 console.log(document.title);
@@ -13,23 +13,23 @@ console.log(document.all);
 console.log(document.all[10]);
 //document.all[10].textContent = 'Hello';
 console.dir(document.forms);
-console.dir(document.links); */
+console.dir(document.links); 
 //console.dir(document.images);
 
 // GET Element by ID
-//console.log(document.getElementById('header-title'));
-// var headerTitle = document.getElementById('header-title');
-// var header = document.getElementById('main-header');
-// console.log(headerTitle);
-// headerTitle.textContent = 'Hello';
-// headerTitle.innerText = 'GoodBye';
-// console.log(headerTitle.textContent);
-// console.log(headerTitle.innerText);
-// headerTitle.innerHTML = '<h3>Hallo</h3>';
-// header.style.borderBottom = 'solid 3px black';
+console.log(document.getElementById('header-title'));
+var headerTitle = document.getElementById('header-title');
+var header = document.getElementById('main-header');
+console.log(headerTitle);
+headerTitle.textContent = 'Hello';
+headerTitle.innerText = 'GoodBye';
+console.log(headerTitle.textContent);
+console.log(headerTitle.innerText);
+headerTitle.innerHTML = '<h3>Hallo</h3>';
+header.style.borderBottom = 'solid 3px black';
 
 // GET Elements by ClassName
-/* var items = document.getElementsByClassName('list-group-item');
+var items = document.getElementsByClassName('list-group-item');
 console.log(items);
 console.log(items[1]);
 items[1].textContent = 'Hello 2';
@@ -41,10 +41,10 @@ items[1].style.backgroundColor = 'yellow';
 
 for (var i = 0; i < items.length; i++) {
   items[i].style.backgroundColor = '#f4f4f4';
-} */
+} 
 
 // GET ELEMENTS BY TAG NAME
-/* var li = document.getElementsByTagName('li');
+var li = document.getElementsByTagName('li');
 console.log(li);
 console.log(li[1]);
 li[1].textContent = 'Hello 2';
@@ -56,10 +56,10 @@ li[1].style.backgroundColor = 'yellow';
 
 for (var i = 0; i < li.length; i++) {
   li[i].style.backgroundColor = '#f4f4f4';
-} */
+} 
 
 // Query Selector //
-/* var header = document.querySelector('#main-header');
+var header = document.querySelector('#main-header');
 header.style.borderBottom = 'solid 4px #ccc';
 
 var input = document.querySelector('input');
@@ -75,11 +75,11 @@ var lastItem = document.querySelector('.list-group-item:last-child');
 lastItem.style.color = 'blue';
 
 var secondItem = document.querySelector('.list-group-item:nth-child(2)');
-secondItem.style.color = 'coral'; */
+secondItem.style.color = 'coral'; 
 
 // Query SELECTOR ALL
 
-/* var titles = document.querySelectorAll('.title');
+var titles = document.querySelectorAll('.title');
 console.log(titles);
 titles[0].textContent = 'Hello';
 
@@ -89,53 +89,53 @@ var even = document.querySelectorAll('li:nth-child(even)');
 for (var i = 0; i < odd.length; i++) {
   odd[i].style.backgroundColor = '#f4f4f4';
   even[i].style.backgroundColor = '#ccc';
-} */
+} 
 
 // Traversing the dom
 // var itemList = document.querySelector('#items');
 // parentNode
-/* console.log(itemList.parentNode);
+console.log(itemList.parentNode);
 itemList.parentNode.style.backgroundColor = '#f4f4f4';
-console.log(itemList.parentNode.parentNode); */
+console.log(itemList.parentNode.parentNode); 
 
 // parentElement
-/* console.log(itemList.parentElement);
+console.log(itemList.parentElement);
 itemList.parentElement.style.backgroundColor = '#f4f4f4';
-console.log(itemList.parentElement.parentElement); */
+console.log(itemList.parentElement.parentElement); 
 
 // childNodes // dont use this one instead childrens
 // console.log(itemList.childNodes);
-/* console.log(itemList.children);
+console.log(itemList.children);
 console.log(itemList.children[2]);
-itemList.children[2].style.backgroundColor = 'yellow'; */
+itemList.children[2].style.backgroundColor = 'yellow'; 
 
 // FirstChild
-/* console.log(itemList.firstChild);
+console.log(itemList.firstChild);
 // FirstElementChild
 console.log(itemList.firstElementChild);
-itemList.firstElementChild.textContent = 'Hello 1 '; */
+itemList.firstElementChild.textContent = 'Hello 1 '; 
 
 // lastChild
-/* console.log(itemList.lastChild);
+console.log(itemList.lastChild);
 // lastElementChild
 console.log(itemList.lastElementChild);
-itemList.lastElementChild.textContent = 'Hello 1 '; */
+itemList.lastElementChild.textContent = 'Hello 1 '; 
 
 // nextSibling
-/* console.log(itemList.nextSibling);
+console.log(itemList.nextSibling);
 // nextElementSibling
-console.log(itemList.nextElementSibling); */
+console.log(itemList.nextElementSibling); 
 
 // previousSibling
-/* console.log(itemList.previousSibling);
+console.log(itemList.previousSibling);
 // nextElementSibling
 console.log(itemList.previousElementSibling);
-itemList.previousElementSibling.style.color = 'red'; */
+itemList.previousElementSibling.style.color = 'red'; 
 
 // createElement
 
 // Create a div
-/* var newDiv = document.createElement('div');
+var newDiv = document.createElement('div');
 
 // Add class
 newDiv.className = 'hello';
@@ -160,51 +160,51 @@ console.log(newDiv);
 newDiv.style.fontSize = '30px';
 
 container.insertBefore(newDiv, h1);
- */
+ 
 
 // EVENTS
 
-// var button = document
-//   .getElementById('button')
-//   .addEventListener('click', buttonClick);
+var button = document
+  .getElementById('button')
+  .addEventListener('click', buttonClick);
 
-// function buttonClick(e) {
-//   // document.getElementById('header-title').textContent = 'Changed';
-//   // document.querySelector('#main').style.backgroundColor = '#f4f4f4';
-//   // console.log(e);
-//   // console.log(e.target);
-//   // console.log(e.target.id);
-//   // console.log(e.target.className);
-//   // console.log(e.target.classList);
-//   // var output = document.getElementById('output');
-//   // output.innerHTML = '<h3>' + e.target.id + '</h3>';
+function buttonClick(e) {
+  document.getElementById('header-title').textContent = 'Changed';
+  document.querySelector('#main').style.backgroundColor = '#f4f4f4';
+  console.log(e);
+  console.log(e.target);
+  console.log(e.target.id);
+  console.log(e.target.className);
+  console.log(e.target.classList);
+  var output = document.getElementById('output');
+  output.innerHTML = '<h3>' + e.target.id + '</h3>';
 
-//   // console.log(e.type);
+  console.log(e.type);
 
-//   // console.log(e.clientX);
-//   // console.log(e.clientY);
+  console.log(e.clientX);
+  console.log(e.clientY);
 
-//   // console.log(e.offsetX);
-//   // console.log(e.offsetY);
+  console.log(e.offsetX);
+  console.log(e.offsetY);
 
-//   console.log(e.altkey);
-//   console.log(e.ctrlkey);
-//   console.log(e.shiftkey);
-// }
+  console.log(e.altkey);
+  console.log(e.ctrlkey);
+  console.log(e.shiftkey);
+}
 
 var button = document.getElementById('button');
 var box = document.querySelector('#box');
 
-// button.addEventListener('click', runEvent);
-// button.addEventListener('dblclick', runEvent);
-// button.addEventListener('mousedown', runEvent);
-// button.addEventListener('mouseup', runEvent);
+button.addEventListener('click', runEvent);
+button.addEventListener('dblclick', runEvent);
+button.addEventListener('mousedown', runEvent);
+button.addEventListener('mouseup', runEvent);
 
-// box.addEventListener('mouseenter', runEvent);
-// box.addEventListener('mouseleave', runEvent);
+box.addEventListener('mouseenter', runEvent);
+box.addEventListener('mouseleave', runEvent);
 
-// box.addEventListener('mouseover', runEvent);
-// box.addEventListener('mouseout', runEvent);
+box.addEventListener('mouseover', runEvent);
+box.addEventListener('mouseout', runEvent);
 
 box.addEventListener('mousemove', runEvent);
 
@@ -212,20 +212,20 @@ var itemInput = document.querySelector('input[type="text"]');
 var form = document.querySelector('form');
 var select = document.querySelector('select');
 
-// itemInput.addEventListener('keydown', runEvent);
-// itemInput.addEventListener('keyup', runEvent);
-// itemInput.addEventListener('keypress', runEvent);
+itemInput.addEventListener('keydown', runEvent);
+itemInput.addEventListener('keyup', runEvent);
+itemInput.addEventListener('keypress', runEvent);
 
-// itemInput.addEventListener('focus', runEvent);
-// itemInput.addEventListener('blur', runEvent);
+itemInput.addEventListener('focus', runEvent);
+itemInput.addEventListener('blur', runEvent);
 
-// itemInput.addEventListener('cut', runEvent);
-// itemInput.addEventListener('paste', runEvent);
+itemInput.addEventListener('cut', runEvent);
+itemInput.addEventListener('paste', runEvent);
 
-// itemInput.addEventListener('input', runEvent);
+itemInput.addEventListener('input', runEvent);
 
-// select.addEventListener('change', runEvent);
-// select.addEventListener('input', runEvent);
+select.addEventListener('change', runEvent);
+select.addEventListener('input', runEvent);
 
 form.addEventListener('submit', runEvent);
 function runEvent(e) {
