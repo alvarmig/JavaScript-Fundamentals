@@ -1,0 +1,67 @@
+body {
+    padding-top: 50px;
+  }
+  
+  .starter-template {
+    padding: 40px 15px;
+    text-align: center;
+  }
+  
+  .content-area {
+    margin: 30px;
+  }
+  
+  .input-area {
+    margin: 25px;
+  }
+  
+  .task-text {
+    display: flex;
+    align-items: center;
+    height: 40px;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .delete-icon-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+  }
+  
+  .delete-icon-area button {
+    background: transparent;
+    border: none;
+    padding: 0;
+  }
+  
+  .delete-icon {
+    color: red;
+  }
+  
+  .complete {
+    text-decoration: line-through;
+    color: gray;
+  }
+  
+  .badge.badge-warning {
+    color: #212529;
+    background-color: #ffc107;
+  }
+  
+  .badge.badge-success {
+    color: #fff;
+    background-color: #28a745;
+  }
+  
+  .badge.badge-danger {
+    color: #fff;
+    background-color: #dc3545;
+  }
+
+  .complete {
+    text-decoration: line-through;
+  }
